@@ -7,3 +7,9 @@ __pycache__/
 *.pyc
 .idea/
 .vscode/
+mlartifacts/
+XAI/output/
+*.png
+*.html
+*.pkl
+data/
