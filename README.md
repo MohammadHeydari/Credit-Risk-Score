@@ -97,3 +97,42 @@ A FastAPI-based inference service is implemented.
 - FastAPI
 - Pandas
 - NumPy
+
+---
+
+## How to Run the Project
+
+The system has three main components that must be run separately:
+
+### 1. Run ML Training Pipeline
+
+This runs model training, evaluation, and MLflow logging.
+
+```bash
+python main.py
+```
+
+### Run MLflow Tracking Server
+```
+mlflow ui --host 127.0.0.1 --port 5000
+```
+
+#### Then open in browser:
+```
+http://127.0.0.1:5000
+```
+
+### Run FastAPI Service
+```
+uvicorn api_:app --reload
+```
+
+#### Default endpoint:
+```
+http://127.0.0.1:8000
+```
+
+#### Swagger UI:
+```
+http://127.0.0.1:8000/docs
+```
