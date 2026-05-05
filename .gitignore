@@ -1,0 +1,9 @@
+.venv/
+venv/
+mlruns/
+mlflow.db
+*.pkl
+__pycache__/
+*.pyc
+.idea/
+.vscode/
